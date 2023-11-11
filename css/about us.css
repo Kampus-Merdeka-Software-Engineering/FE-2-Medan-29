@@ -1,20 +1,31 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e4e4ac;
+    background-color:#d49e67;
     width: 100%;
     padding: 4px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
 }
 
 .img-navbar {
-    width: 100px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-left: 20px;
+}
+
+.navbar-name {
+    margin-left: 6px;
 }
 
 .menu {
@@ -27,8 +38,8 @@ body {
 }
 
 .menu-navbar:hover {
-    transition: color 0.5s;
-    color: #d6816e;
+    transition: color 0.3s;
+    color:#e4e4ac;
 }
 
 .about-us {
@@ -37,15 +48,20 @@ body {
     margin: auto;
 }
 
+.about-us-desc {
+    padding: 0px 50px;
+}
+
 .btn {
+    margin-top: 10px;
     padding: 4px 50px;
     border-radius: 10px;
-    background-color: #e4e4ac;
+    background-color: #eaead7;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #eaead7;
+    background-color: #e4e4ac;
     transition: .5s;
 }
 
@@ -59,7 +75,7 @@ body {
 .contact-card {
     border-radius: 10px;
     width: 300px;
-    background-color: #e4e4ac;
+    background-color: #eaead7;
     margin: auto;
     padding: 10px;
 }
@@ -78,10 +94,11 @@ body {
 
 .card {
     margin: 20px 50px;
-    padding: 40px;
-    background-color: #e4e4ac;
+    padding: 40px 40px 20px;
+    background-color: #eaead7;
 }
 
 .img-team {
     width: 200px;
+    margin-bottom: 20px;
 }
