@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="./asset/logo1.png" width="170%" alt="" />
+          </div>
+          <ul class="nav-link">
+            <li>
+              <a href="#home">Beranda</a>
+            </li>
+            <li class="dropdown">
+                <a href="#topik">Topik</a>
+                <div class="dropdown-content">
+                    <a href="#">Gaya Hidup Sehat</a>
+                    <a href="#">Kecantikan</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Travel</a>
+                    <a href="#">Kuliner</a>
+                    <a href="#">Budaya</a>
+                </div>
+            </li>
+            <li>
+              <a href="/about_us.html">Tentang Kami</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="search-button">Cari</button>
+    </div>
+
+    <div class="line"></div>
+
+    <section id="home">
+      <div class="home-card">
+        <div class="home-caption">
+          <h2>Selamat Datang di</h2>
+          <h1>Urban Vibes Daily!</h1>
+          <p>Temukan artikel menarik seputar gaya hidup, kecantikan, fashion, dan berbagai topik menarik lainnya bersama URBAN VIBES DAILY✨</p>
+          <br>
+          <p>Untuk berlangganan newsletter kami, anda dapat klik tombol berikut</p>
+          <button class="button">Pelajari lebih lanjut</button>
+        </div>
+      </div>
+      <img src="asset/image/people.jpeg" class="slideshow-img">
+      <!-- <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="asset/image/food.jpeg" class="slideshow-img">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="asset/image/healthylifestyle.jpeg" class="slideshow-img">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="asset/image/people.jpeg" class="slideshow-img">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="asset/image/culture.jpeg" class="slideshow-img">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="asset/image/makeup.jpeg" class="slideshow-img">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="asset/image/fashion.jpeg" class="slideshow-img">
+        </div>
+      </div> -->
+  
+    </section>
+
+    <div class="container-topic">
+      <h2 style="margin: 30px;">Pilihlah topik sesuai kebutuhan anda . . . </h2>
+      <div class="card-container">
+        <div class="topic-card">
+          <img src="asset/image/healthylifestyle2.jpeg" width="100%">
+          <p>gaya hidup sehat</p>
+        </div>
+        <div class="topic-card">
+          <img src="asset/image/beauty2.jpeg" width="100%">
+          <p>kecantikan</p>
+        </div>
+        <div class="topic-card">
+          <img src="asset/image/fashion2.jpeg" width="100%">
+          <p>fashion</p>
+        </div>
+        <div class="topic-card">
+          <img src="asset/image/travel.jpeg" width="100%">
+          <p>travel</p>
+        </div>
+        <div class="topic-card">
+          <img src="asset/image/food.jpeg" width="100%">
+          <p>kuliner</p>
+        </div>
+        <div class="topic-card">
+          <img src="asset/image/culture2.jpeg" width="100%">
+          <p>budaya</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div id="#newsletter" class="container-form">
+      <h3 style="text-align: center;">Ingin mendapatkan update-an terbaru dari kami?</h3>
+      <p style="text-align: center;">Bergabunglah dengan newsletter kami 🌟</p>
+      <p style="text-align: center;">⬇️ Untuk dapat bergabung dengan newsletter kami, silahkan isi form berikut ⬇️</p>
+      <br>
+        <div class="form-card">
+          <div class="form-input">
+            <label for="email">Masukan email Anda yang masih aktif</label>
+            <br>
+            <input type="email" placeholder="email@contoh.com" id="email" />
+          </div>
+          <button style="margin-inline: 220px; margin-top: 20px;">Submit</button>
+         
+        </div>
+    </div>
+    <br>  
+    <footer>
+      footer
+    </footer>
+
+    <script>
+
+      let slideIndex = 0;
+      showSlides();
+  
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+</body>
+</html>
