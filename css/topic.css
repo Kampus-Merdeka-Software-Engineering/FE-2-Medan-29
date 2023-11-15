@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+ 
+  body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mukta', sans-serif;
+  }
+
+  header {
+    display: inline;
+  }
+  
+  nav {
+    box-shadow: 0 0 5px black;
+    background-color: #eaead7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 50px;
+  }
+  
+  nav ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: #472A24;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+  nav ul li a:hover {
+    color: #D6816E;
+    font-weight: bold;
+  }
+  
+  /* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change the color of links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+  text-align: center;
+}
+
+/*Styling separator*/
+.line {
+    width: auto;
+    height: 5px;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    /*margin: 5px 40px 40px;*/
+    margin-top: -10px;
+
+  }
+.separator {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.topic-title {
+    position: relative;
+    top: -3px;
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #472A24;
+}
+  
+.back-button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eaead7;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    z-index: 2;
+}
+
+.back-button:hover {
+    background-color: #D6816E;
+}
+
+.back-button a{
+  color: #472A24;
+  text-decoration: none;
+}
+
+/*Styling main*/
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.article {
+    display: flex;
+    width: 87%;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    margin: 0 0 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #eaead7;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.article img {
+    width: 20%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.article div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.article h2 {
+    margin: 5px 0;
+    color: #472A24;
+}
+
+.article h4 {
+    margin: 10px 0 5px;
+    color: #472A24;
+}
+
+.article div.read-more {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute; /* Positioned at the bottom */
+    bottom: 10px; /* Distance from the bottom */
+    width: 100%; /* Full width */
+}
+
+.article div.read-more a {
+    text-decoration: none;
+    background-color: #eaead7;
+    color: #472A24;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.article a:hover {
+    color: #D6816E;
+}
+
