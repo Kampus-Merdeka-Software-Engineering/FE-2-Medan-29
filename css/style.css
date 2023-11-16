@@ -221,6 +221,10 @@ button{
   width: 300px;
   margin-inline: 30px;
 }
+.topic-card a {
+  text-decoration: none; 
+  color: inherit; 
+}
 
 .topic-card:hover{
   background-color: #eaead7;
