@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+ 
+  body {
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mukta', sans-serif;
+  }
+
+  header {
+    display: inline;
+  }
+
+  
+  nav {
+    box-shadow: 0 0 5px black;
+    background-color: #eaead7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 50px;
+  }
+  
+  nav ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: #472A24;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  
+  nav ul li a:hover {
+    color: #D6816E;
+    font-weight: bold;
+  }
+  
+  /* Style for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change the color of links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.our-team {
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.our-team-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px 50px;
+    padding: 40px 40px 20px;
+    background: linear-gradient(135deg, #d6816e, #d9c680);
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 4px 8px 10px 0px rgba(0,0,0,0.2);
+}
+
+.img-team {
+    width: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
