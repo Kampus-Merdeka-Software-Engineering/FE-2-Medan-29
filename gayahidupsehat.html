@@ -50,7 +50,7 @@
 
     <main>
         <section class="news">
-            <div class="article">
+            <div class="article" onclick="redirectToLink('https://health.kompas.com/read/23J23130000968/7-gaya-hidup-sehat-untuk-mencegah-depresi')">
                 <img src="./asset/topic/depresi.jpeg">
                 <div>
                     <h2>7 Gaya Hidup Sehat untuk Mencegah Depresi</h2>
@@ -68,8 +68,8 @@
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" >
+                <img src="./asset/topic/depresi.jpeg">
                 <div>
                     <h2>News Tittle</h2>
                     <h4>Author</h4>
@@ -117,6 +117,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
         }
     </script>
 </body>

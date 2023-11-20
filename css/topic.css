@@ -161,6 +161,8 @@
     background-color: #eaead7;
     border-radius: 5px;
     text-align: left;
+    cursor: pointer; 
+    
 }
 
 .article img {
@@ -188,9 +190,9 @@
 .article div.read-more {
     text-align: center;
     margin-top: 20px;
-    position: absolute; /* Positioned at the bottom */
-    bottom: 10px; /* Distance from the bottom */
-    width: 100%; /* Full width */
+    position: absolute; 
+    bottom: 10px; 
+    width: 100%; 
 }
 
 .article div.read-more a {
@@ -203,7 +205,14 @@
     margin-top: 20px;
 }
 
-.article a:hover {
-    color: #D6816E;
+.article:hover {
+  transform: translateY(-5px); 
+  transition: transform 0.3s ease; 
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
 }
+
+.article:hover a {
+  color: #D6816E; 
+}
+
 

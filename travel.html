@@ -50,7 +50,7 @@
 
     <main>
         <section class="news">
-            <div class="article">
+            <div class="article" onclick="redirectToLink('https://travel.kompas.com/read/2023/11/15/082524027/ada-kereta-gantung-bertema-pokemon-di-singapura-cek-tarifnya')">
                 <img src="./asset/topic/kereta.jpg">
                 <div>
                     <h2>Ada Kereta Gantung Bertema Pokemon di Singapura, Cek Tarifnya</h2>
@@ -118,6 +118,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
         }
     </script>
 </body>

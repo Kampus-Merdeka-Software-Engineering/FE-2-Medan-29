@@ -50,7 +50,7 @@
 
     <main>
         <section class="news">
-            <div class="article">
+            <div class="article" onclick="redirectToLink('https://www.detik.com/sumut/kuliner/d-7020748/rekomendasi-tempat-makan-croissant-di-medan')">
                 <img src="./asset/topic/croissant.jpeg">
                 <div>
                     <h2>Rekomendasi Tempat Makan Croissant di Medan</h2>
@@ -120,6 +120,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
         }
     </script>
 </body>

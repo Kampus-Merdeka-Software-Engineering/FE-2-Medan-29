@@ -50,7 +50,7 @@
 
     <main>
         <section class="news">
-            <div class="article">
+            <div class="article" onclick="redirectToLink('https://www.cnnindonesia.com/gaya-hidup/20230925152748-277-1003461/3-treatment-ala-korea-yang-paling-banyak-diminta-di-indonesia')">
                 <img src="./asset/topic/korea.jpeg">
                 <div>
                     <h2>3 Treatment ala Korea yang Paling Banyak Diminta di Indonesia</h2>
@@ -117,6 +117,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
         }
     </script>
 </body>

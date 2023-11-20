@@ -50,7 +50,7 @@
 
     <main>
         <section class="news">
-            <div class="article">
+            <div class="article" onclick="redirectToLink('https://www.kompas.com/edu/read/2023/11/07/143821171/budaya-patriarki-bikin-peran-pengasuhan-anak-makin-sulit')">
                 <img src="./asset/topic/croissant.jpeg">
                 <div>
                     <h2>Budaya Patriarki Bikin Peran Pengasuhan Anak Makin Sulit</h2>
@@ -120,6 +120,9 @@
     <script>
         function goBack() {
             window.history.back();
+        }
+        function redirectToLink(link) {
+            window.location.href = link;
         }
     </script>
 </body>
