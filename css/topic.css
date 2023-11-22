@@ -63,11 +63,20 @@ header nav ul li a:hover {
   gap: 30px;
 }
 
+.main-navigation ul li{
+  position: relative;
+}
+
+.main-navigation ul li:not(:last-child) {
+  border-right: 2px solid #472A24; 
+}
+
 .main-navigation ul li a {
   color: #472A24;
   text-decoration: none;
   font-size: 16px;
   font-weight: 800;
+  padding-right: 35px;
 }
 
 .main-navigation ul li a:hover {
