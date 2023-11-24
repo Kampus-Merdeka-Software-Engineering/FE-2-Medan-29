@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
     <link rel="stylesheet" href="./css/topic.css" />
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
@@ -13,42 +12,30 @@
 <body>
     <header>
         <nav>
-          <div class="logo">
-            <img src="./asset/logo1.png" width="170%" alt="" />
-          </div>
-          <ul class="nav-link">
-            <li>
-              <a href="./home.html">Beranda</a>
-            </li>
-            <li class="dropdown">
-                <a href="./home.html">Topik</a>
-                <div class="dropdown-content">
-                    <a href="./gayahidupsehat.html">Gaya Hidup Sehat</a>
-                    <a href="./kecantikan.html">Kecantikan</a>
-                    <a href="./fashion.html">Fashion</a>
-                    <a href="./travel.html">Travel</a>
-                    <a href="./kuliner.html">Kuliner</a>
-                    <a href="./budaya.html">Budaya</a>
-                </div>
-            </li>
-            <li>
-              <a href="./about_us.html">Tentang Kami</a>
-            </li>
-          </ul>
+            <div class="logo">
+                <img src="./asset/logo1.png" width="100%" alt="" />
+            </div>
+            <ul class="nav-link">
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="./about_us.html">Tentang Kami</a></li>
+            </ul>
         </nav>
     </header>
 
-    <div class="separator">
-        <div class="topic-title">Kecantikan</div>
-    </div>
+    <nav class="main-navigation">
+        <ul class="temaberita">
+            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+            <li class="menu-item"><a href="./travel.html">Travel</a></li>
+        </ul>
+    </nav>
     
-    <div class="line"></div>
-    
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
 
     <main>
+        <div class="topic-title">Budaya</div>
         <section class="news">
             <div class="article" onclick="redirectToLink('https://www.cnnindonesia.com/gaya-hidup/20230925152748-277-1003461/3-treatment-ala-korea-yang-paling-banyak-diminta-di-indonesia')">
                 <img src="./asset/topic/korea.jpeg">
@@ -114,6 +101,18 @@
 
         </section>
     </main>
+
+    <button class="back-button" onclick="goBack()">Kembali
+        <a href="./home.html"></a>
+    </button>
+    
+    <!-- Footer -->
+    <footer id="myFooter">
+        <p style="text-align: center; font-size: 15px;">&copy; Copyright 2023
+            <br />
+            Revo University - All Right Reserved
+        </p>
+    </footer>
     <script>
         function goBack() {
             window.history.back();
