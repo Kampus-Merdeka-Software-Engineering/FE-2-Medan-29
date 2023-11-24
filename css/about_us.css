@@ -6,7 +6,6 @@
 body {
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Mukta', sans-serif;
-  background: linear-gradient(225deg, #96ff8a, #04c0ff);
 }
 
 header {
@@ -101,7 +100,7 @@ nav ul li a:hover {
 .card {
     margin: 20px 50px;
     padding: 40px 40px 20px;
-    background: linear-gradient(135deg, #def079ea, #f5aea8fa);
+    background-color: #eaead7;
     border-radius: 10px;
     box-shadow: 4px 8px 10px 0px rgba(0,0,0,0.2);
 }
