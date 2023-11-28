@@ -24,7 +24,9 @@
 
       <!-- nav bawah -->
       <section class="main-nav">
-          <nav class="main-navigation">
+          <div class="main-navigation">
+            <span class="menu-toggle" onclick="toggleMenu()"></span>
+            <nav>
               <ul class="temaberita">
                   <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
                   <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
@@ -33,9 +35,9 @@
                   <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
                   <li class="menu-item"><a href="./travel.html">Travel</a></li>
               </ul>
-          </nav>
+            </nav>
+          </div>
       </section>
-      
       <section class="search-container">
           <div class="search">
               <input type="text" class="search-bar" placeholder="Search...">
@@ -70,6 +72,7 @@
           <div class="berita-terkini-box">
               <img src="asset/image/tokyo.jpeg">
               <div class="berita-terkini-caption">
+                  <h5>Topik</h5>
                   <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                       et dolore magna aliqua.</h1>
                   <h4>Author, Date Publised</h4>
@@ -91,7 +94,7 @@
               </div>
           </div>
       </section>
-
+      <br>
       <section class="container-berita-mix">
           <div class="berita-terkini">
               <div class="berita-list">
@@ -237,7 +240,7 @@
           </div>          
           </div>
       </section>
-
+      <br><br>
       <section class="container-rekomen">
         <div class="container-rekomendasi">
           <h2 style="margin-left: 20px; margin-top: 20px;">Rekomendasi Untuk Anda</h2>
@@ -322,6 +325,12 @@
           <p>&copy; 2023</p>
       </footer>
       </section>
+  <script>
+    function toggleMenu() {
+    const navigation = document.querySelector('.main-navigation');
+    navigation.classList.toggle('mobile-menu-open');
+  }
+  </script>
 </body>
 
 </html>
