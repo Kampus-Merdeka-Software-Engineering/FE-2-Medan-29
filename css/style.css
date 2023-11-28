@@ -78,6 +78,10 @@
 
 .search-container {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .search-bar {
@@ -103,7 +107,6 @@
   font-size: 16px;
   font-family: 'Mukta', sans-serif;
   text-align: center;
-  margin-top: 15px;
   margin-inline: 10px;
 }
 
