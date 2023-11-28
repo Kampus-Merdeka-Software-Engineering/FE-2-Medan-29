@@ -198,14 +198,14 @@ color: #D6816E;
 }
 
 #myFooter {
-  background-color: #F5B7B1;
+  background-color: #472a24;
   padding: 20px 0;
   text-align: center;
   margin-top: 70px; /* Adjust this value based on your design */
 }
 
 #myFooter p {
-  color: #472A24;
+  color: white;
   font-size: 15px;
   margin: 0;
 }
