@@ -21,6 +21,8 @@ header nav {
   position: sticky;
   top: 0;
   padding: 10px 20px;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
 header .logo {
@@ -128,4 +130,17 @@ border-right: 1px solid #D6816E;
 .sosmed:hover {
   width: 35px;
   height: 35px;
+}
+
+#myFooter {
+  background-color: #472a24;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 70px; /* Adjust this value based on your design */
+}
+
+#myFooter p {
+  color: white;
+  font-size: 15px;
+  margin: 0;
 }
