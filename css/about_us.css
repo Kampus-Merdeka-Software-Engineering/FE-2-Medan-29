@@ -114,6 +114,7 @@ border-right: 1px solid #D6816E;
 
 .img-team {
     width: 200px;
+    height: 200px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -122,4 +123,9 @@ border-right: 1px solid #D6816E;
   width: 30px;
   height: 30px;
   margin-top: 10px;
+}
+
+.sosmed:hover {
+  width: 35px;
+  height: 35px;
 }
