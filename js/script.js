@@ -17,3 +17,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+// SUBMIT EMAIL MASIH REVISI
+
+function submitComment(event) {
+    const email = document.querySelector("#email");
+
+    if (email.value.trim() === '') {
+        alert("Email must be filled in!");
+        return; // Menghentikan pengiriman jika kolom email kosong
+    }
+
+//store-email disesuain sama nama database
+
+    fetch(`${BASE_URL}/store-email`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            email: email.value,
+        }),
+    })
+    .then((response) => response.json())
+    .then((response) => {
+        alert("Email successfully sent!")
+        console.log(response);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+}

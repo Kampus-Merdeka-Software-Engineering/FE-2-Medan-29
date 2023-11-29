@@ -68,7 +68,7 @@ header nav ul li a:hover {
 }
 
 .main-navigation ul li:not(:last-child) {
-  border-right: 2px solid #472A24; 
+  border-right: 2px solid #d6816e; 
 }
 
 .main-navigation ul li a {
