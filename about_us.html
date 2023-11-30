@@ -11,29 +11,37 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-        <div class="logo">
-            <img src="./asset/logo1.png" width="100%" alt="" />
+      <!-- nav atas -->
+      <section class="nav">
+        <nav class="nav-upper">
+            <div class="logo">
+                <img src="./asset/logo1.png" width="100%" alt="" />
+            </div>
+            <ul class="nav-link">
+                <li><a href="./index.html">Beranda</a></li>
+                <li><a href="./about_us.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </section>
+
+      <!-- nav bawah -->
+      <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
         </div>
-        <ul class="nav-link">
-            <li><a href="./index.html">Beranda</a></li>
-            <li><a href="./about_us.html">Tentang Kami</a></li>
-        </ul>
-    </nav>
-</header>
+    </section>
 
-<nav class="main-navigation">
-    <ul class="temaberita">
-        <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-        <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-        <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-        <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-        <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-        <li class="menu-item"><a href="./travel.html">Travel</a></li>
-    </ul>
-</nav>
-
+    <!-- tentang kami -->
     <div id="our-team" class="our-team">
         <p class="title">Our Team</p>
         <div class="our-team-card">
@@ -75,6 +83,18 @@
             </div>
         </div>
     </div>
+    <section class="footer">
+        <footer>
+          <p>Group 29 Section Medan</p>
+          <p>&copy; 2023</p>
+      </footer>
+      </section>
+    <script>
+        function toggleMenu() {
+        const navigation = document.querySelector('.main-navigation');
+        navigation.classList.toggle('mobile-menu-open');
+      }
+      </script>
 </body>
 
 </html>
