@@ -12,7 +12,7 @@ header{
 }
 header nav {
   box-shadow: 0 0 5px black;
-  background-color: #F5B7B1;
+  background-color: #ffd1ce;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +68,7 @@ header nav ul li a:hover {
 }
 
 .main-navigation ul li:not(:last-child) {
-  border-right: 2px solid #472A24; 
+  border-right: 2px solid #d6816e; 
 }
 
 .main-navigation ul li a {
@@ -198,14 +198,14 @@ color: #D6816E;
 }
 
 #myFooter {
-  background-color: #F5B7B1;
+  background-color: #472a24;
   padding: 20px 0;
   text-align: center;
   margin-top: 70px; /* Adjust this value based on your design */
 }
 
 #myFooter p {
-  color: #472A24;
+  color: white;
   font-size: 15px;
   margin: 0;
 }

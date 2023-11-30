@@ -172,11 +172,15 @@ body {
   height: 32px;
 }
 
-footer {
-  width: 100%;
+#myFooter {
   background-color: #472a24;
-  color: white;
-  font-size: 14px;
+  padding: 20px 0;
   text-align: center;
-  padding: 20px;
+  margin-top: 70px; /* Adjust this value based on your design */
+}
+
+#myFooter p {
+  color: white;
+  font-size: 15px;
+  margin: 0;
 }
