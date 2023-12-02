@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <link rel="stylesheet" href="./css/topic.css" />
+    <title>Gaya Hidup Sehat</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- nav atas -->
+    <section class="nav">
+        <nav class="nav-upper">
             <div class="logo">
                 <img src="./asset/logo1.png" width="100%" alt="" />
             </div>
@@ -20,92 +21,118 @@
                 <li><a href="./about_us.html">Tentang Kami</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <nav class="main-navigation">
-        <ul class="temaberita">
-            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-            <li class="menu-item"><a href="./travel.html">Travel</a></li>
-        </ul>
-    </nav>
+    <!-- nav bawah -->
+    <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
+        </div>
+    </section>
     
 
     <main>
-        <div class="topic-title">Budaya</div>
+        <div class="topic-title">Gaya Hidup Sehat</div>
         <section class="news">
-            <div class="article" onclick="redirectToLink('https://health.kompas.com/read/23J23130000968/7-gaya-hidup-sehat-untuk-mencegah-depresi')">
-                <img src="./asset/topic/depresi.jpeg">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <div>
-                    <h2>7 Gaya Hidup Sehat untuk Mencegah Depresi</h2>
-                    <h4>Elizabeth Ayudya Ratna Rininta</h4>
+                    <h2>KERJA SHIFT MALAM? INI TIPS YANG BISA DILAKUKAN UNTUK MENJAGA KESEHATAN</h2>
+                    <h4>dr. Fadhli Rizal Makarim</h4>
+                    <h4>24 November 2023</h4>
                     <div>
                         <p>
-                            KOMPAS.com - Depresi adalah gangguan mental yang biasanya ditandai dengan perasaan sedih yang mendalam, 
-                            kehilangan asa peduli, dan minat dalam menjalani aktivitas sehari-hari. Penyebab depresi bisa karena masalah 
-                            pribadi atau perselisihan dengan keluarga atau rekan, peristiwa besar, penyakit serius, dan efek penggunaan 
-                            obat-obatan tertentu. Risiko depresi juga dapat meningkat pada seseorang yang memiliki riwayat genetik atau 
-                            keluarga dengan kondisi serupa.......
+                            "Kerja shift malam bisa memicu masalah kesehatan karena kamu dituntut untuk terjaga sepanjang malam. Supaya tidak mudah jatuh sakit, 
+                            atur pola makan, waktu tidur dan sempatkan berolahraga."Halodoc, Jakarta- Bekerja shift malam bisa mengganggu pola tidur normal. 
+                            Akibatnya, kondisi ini bukan tidak mungkin dapat memengaruhi kondisi kesehatan kamu. Itu sebabnya, kamu perlu melakukan beberapa tindakan 
+                            untuk mencegah masalah ini. Nah, berikut sejumlah tips yang bisa kamu lakukan agar kesehatan tetap terjaga.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
                         </p>
-                        <a href='https://health.kompas.com/read/23J23130000968/7-gaya-hidup-sehat-untuk-mencegah-depresi'> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
 
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>MENGENAL PIRAMIDA MAKANAN DALAM POLA MAKAN GIZI SEIMBANG</h2>
+                    <h4>dr. Rizal Fadli</h4>
+                    <h4>24 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            “Piramida makanan merupakan gambaran asupan makanan yang bisa membantumu untuk memenuhi kebutuhan gizi seimbang. Pastikan kamu 
+                            mengetahui makanan yang perlu dikonsumsi dan harus dibatasi dalam piramida makanan.”Halodoc, Jakarta  Piramida makanan merupakan 
+                            gambaran atau ilustrasi yang diperlukan untuk mendapatkan pola makan yang sehat. Piramida makanan tentunya sangat berbeda dengan rantai makanan......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')"></div>
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>4 PENYAKIT YANG MENGINTAI AKIBAT SERING MAKAN GORENGAN</h2>
+                    <h4>Rindi Salsabilla, CNBC Indonesia</h4>
+                    <h4>21 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Jakarta, CNBC Indonesia - Gorengan adalah salah satu makanan yang paling digemari masyarakat Indonesia. Tidak hanya sebagai camilan, 
+                            gorengan biasanya dikonsumsi sebagai pendamping minum teh, kopi, hingga makanan berat. Sudah bukan rahasia lagi kalau terlalu banyak 
+                            mengonsumsi gorengan dapat berdampak buruk bagi kesehatan tubuh. Melansir dari laman resmi Kementerian Kesehatan (Kemenkes RI), 
+                            terlalu banyak makan gorengan mampu meningkatkan risiko penyakit jantung, diabetes, hingga obesitas.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>AHLI UNGKAP EFEK NEGATIF TAK TERDUGA DARI OLAHRAGA BERLEBIHAN</h2>
+                    <h4>Rindi Salsabilla, CNBC Indonesia</h4>
+                    <h4>23 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Jakarta, CNBC Indonesia - Olahraga adalah salah satu kegiatan yang paling direkomendasikan oleh para ahli untuk menjaga kesehatan 
+                            dan menghindari tubuh dari berbagai risiko penyakit. Maka dari itu, tidak heran jika sebagian besar orang mulai rutin berolahraga. 
+                            Bahkan, tidak sedikit di antaranya yang menghabiskan banyak waktu untuk berolahraga hingga berlebihan. Sebab, mereka menganggap 
+                            bahwa semakin banyak berolahraga maka semakin sehat kondisi tubuh...<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>JUMLAH AMAN KONSUMSI TELUR AGAR KOLESTEROL TIDAK NAIK TINGGI</h2>
+                    <h4>Rindi Salsabilla, CNBC Indonesia</h4>
+                    <h4>24 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Jakarta, CNBC Indonesia - Siapa yang tidak mengetahui telur? Bahan makanan yang merupakan sumber protein ini adalah salah satu
+                            favorit bagi sebagian besar masyarakat Indonesia. Selain karena harganya yang relatif murah, makanan dengan kandungan lemak, karbohidrat, 
+                            kalsium, fosfor, zat besi, hingga kalium ini sering dijadikan menu pilihan karena dinilai sangat enak dan mengenyangkan. Namun, sebagian besar 
+                            orang menghindari konsumsi telur karena khawatir kolesterol tinggi. Lantas, berapakah jumlah telur yang aman dikonsumsi oleh penderita kolesterol.....<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+
+                        </p>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
     
     <!-- Footer -->
     <footer id="myFooter">

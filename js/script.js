@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-//const BASE_URL = "link railway";
+const BASE_URL = "https://be-2-medan-29-production.up.railway.app/";
 
 // SUBMIT EMAIL MASIH REVISI
 function submitComment(event) {
@@ -20,7 +20,7 @@ function submitComment(event) {
 
     if (email.value.trim() === '') {
         alert("Email must be filled in!");
-        return; // Menghentikan pengiriman jika kolom email kosong
+        return; // Menghentikan pengiriman jika kolom email kosongcd
     }
 
 //store-email disesuain sama nama database

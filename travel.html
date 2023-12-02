@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda</title>
-    <link rel="stylesheet" href="./css/topic.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- nav atas -->
+    <section class="nav">
+        <nav class="nav-upper">
             <div class="logo">
                 <img src="./asset/logo1.png" width="100%" alt="" />
             </div>
@@ -20,25 +21,31 @@
                 <li><a href="./about_us.html">Tentang Kami</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <nav class="main-navigation">
-        <ul class="temaberita">
-            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-            <li class="menu-item"><a href="./travel.html">Travel</a></li>
-        </ul>
-    </nav>
+    <!-- nav bawah -->
+    <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
+        </div>
+    </section>
     
 
     <main>
-        <div class="topic-title">Budaya</div>
+        <div class="topic-title">Travel</div>
         <section class="news">
-            <div class="article" onclick="redirectToLink('https://travel.kompas.com/read/2023/11/15/082524027/ada-kereta-gantung-bertema-pokemon-di-singapura-cek-tarifnya')">
-                <img src="./asset/topic/kereta.jpg">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="./asset/RevoU.png">
                 <div>
                     <h2>Ada Kereta Gantung Bertema Pokemon di Singapura, Cek Tarifnya</h2>
                     <h4>Ni Nyoman Wira Widyanti</h4>
@@ -48,63 +55,53 @@
                             (cable car) di Sentosa, Singapura, yang tersedia hingga tahun depan, tepatnya
                              Selasa (30/4/2024). "Bersiaplah memasuki dunia Pokemon di dalam kereta Singapore 
                              Cable Car pada musim liburan ini, sembari menikmati pemandangan indah pencakar langit
-                              Singapura," bunyi keterangan yang dikutip dari laman resmi Sentosa, Rabu (15/11/2023).
-
+                              Singapura," bunyi keterangan yang dikutip dari laman resmi Sentosa, Rabu (15/11/2023)....<a href="./halaman-berita.html"> Baca Selengkapnya</a>
                         </p>
-                        <a href='https://travel.kompas.com/read/2023/11/15/082524027/ada-kereta-gantung-bertema-pokemon-di-singapura-cek-tarifnya'> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
                     <h2>News Tittle</h2>
                     <h4>Author</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <img src="./asset/RevoU.png">
-                <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
-                    <div>
-                        <a href="#"> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
                     <h2>News Tittle</h2>
                     <h4>Author</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
                     <h2>News Tittle</h2>
                     <h4>Author</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="./asset/RevoU.png">
+                <div>
+                    <h2>News Tittle</h2>
+                    <h4>Author</h4>
+                    <div>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
     
     <!-- Footer -->
     <footer id="myFooter">

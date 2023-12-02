@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <link rel="stylesheet" href="./css/topic.css" />
+    <title>Kuliner</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- nav atas -->
+    <section class="nav">
+        <nav class="nav-upper">
             <div class="logo">
                 <img src="./asset/logo1.png" width="100%" alt="" />
             </div>
@@ -20,93 +21,114 @@
                 <li><a href="./about_us.html">Tentang Kami</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <nav class="main-navigation">
-        <ul class="temaberita">
-            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-            <li class="menu-item"><a href="./travel.html">Travel</a></li>
-        </ul>
-    </nav>
+    <!-- nav bawah -->
+    <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
+        </div>
+    </section>
     
 
     <main>
-        <div class="topic-title">Budaya</div>
+        <div class="topic-title">Kuliner</div>
         <section class="news">
-            <div class="article" onclick="redirectToLink('https://www.detik.com/sumut/kuliner/d-7020748/rekomendasi-tempat-makan-croissant-di-medan')">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/topic/croissant.jpeg">
                 <div>
-                    <h2>Rekomendasi Tempat Makan Croissant di Medan</h2>
-                    <h4>Angelina Giyanti Purba</h4>
+                    <h2>Resep Omurice, Nasi Goreng Selimut ala Jepang untuk Bekal Anak</h2>
+                    <h4>Krisda Tiofani</h4>
+                    <h4>29 November 2023</h4>
                     <div>
                         <p>
-                            Medan - Mendengar nama kue croissant, membuat sebagian orang mengatakan bahwa kue ini 
-                            merupakan sajian yang berasal dari Prancis. Faktanya, pastry yang satu ini berasal dari Austria.
-                            Seiring berjalannya waktu, kue yang satu ini mulai menjadi makanan yang banyak digemari oleh seluruh dunia, 
-                            terutama Indonesia. Sudah banyak restoran maupun kafe yang menjadikan kue croissant sebagai wajah dari penjualan
-                            atau sekedar side dish (makanan pelengkap). Kota Medan, menjadi salah satu kota yang menjual kue hits yang 
-                            satu ini. Bagi detikers yang ingin menyicipi kue croissant di Medan, berikut detikSumut sajikan rekomendasi 
-                            makan croissant yang ada di Medan......
+                            KOMPAS.com - Omurice alias omelette dan rice merupakan sajian khas Jepang yang cocok dijadikan bekal. Nasi gorengnya dibalut 
+                            dengan telur dadar lembut. Tidak lupa tambahan saus di atasnya. Nasi goreng selimut telur ini cocok dijadikan menu makan anak 
+                            simpel untuk sarapan, makan siang, maupun bekal. Simak resep omurice dari majalah "Saji ED 485" (2021) terbitan Gramedia Pustaka Utama berikut ini......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
 
                         </p>
-                        <a href='https://www.detik.com/sumut/kuliner/d-7020748/rekomendasi-tempat-makan-croissant-di-medan'> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Cek! Kreasi Menu Baru yang Dihadirkan Sasa dalam SIAL Interfood 2023</h2>
+                    <h4>Fachri</h4>
+                    <h4>14 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <img src="./asset/RevoU.png">
-                <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
-                    <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Liputan6.com, Jakarta PT Sasa Inti kembali memeriahkan pameran industri makanan dan minuman berskala internasional, yakni SIAL 
+                            Interfood 2023. Dalam acara yang berlangsung di Jakarta International Expo, Kemayoran, Indonesia pada 8 hingga 11 November 2023 itu, 
+                            PT Sasa Inti menghadirkan live cooking interaktif bersama professional in house chef PT Sasa Inti, Chef Kong dan Chef Igo. Marketing Director 
+                            Consumer Acquisition & Retention PT Sasa Inti, Albert Dinata mengungkapkan bahwa acara tersebut merupakan wadah bagi Sasa dan konsumen 
+                            maupun praktisi kuliner untuk saling bertemu, bertukar ide dan pikiran untuk berinovasi menghasilkan masakan yang lezat dan bernutrisi.........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>4 Sambal Lezat nan Unik di Indonesia, Mana yang Jadi Kesukaan Kamu?</h2>
+                    <h4>Rizky Ramadhan</h4>
+                    <h4>27 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Liputan6.com, Jakarta Bagi masyarakat Indonesia, sambal merupakan salah satu cocolan pendamping lauk yang wajib ada. Rasanya yang gurih, 
+                            lezat, dan pedas memberikan efek ketagihan untuk terus menyantap sebuah makanan. Karena kebiasaan masyarakat Indonesia yang tak bisa 
+                            lepas dari sambal, hingga saat ini sudah banyak sekali olahan sambal-sambal khas dan unik yang tersebar di seluruh penjuru Tanah Air........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
                 <img src="./asset/RevoU.png">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>10 Sup Terenak di Dunia Versi Taste Atlas, Ada Rawon Jawa Timur</h2>
+                    <h4>Krisda Tiofan</h4>
+                    <h4>17 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            KOMPAS.com - Taste Atlas merilis 10 sup terenak di dunia pada Rabu (15/11/2023). Satu di antaranya adalah rawon asal Indonesia. 
+                            Sup terenak di dunia menurut Taste Atlas ini didominasi oleh negara Asia, seperti Filipina, Jepang, Vietnam, dan Thailand. 
+                            Selengkapnya, simak 10 sup terenak menurut Taste Atlas berikut ini. 1. Tonkotsu ramen, Jepang Seporsi tonkotsu ramen dibuat dari mi segar, 
+                            kuning telur, potongan daging, dan kaldu babi. Taburan daun bawang, rumput laut, dan jagung membuat warna ramen kian cerah, teksturnya pun renyah.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="./asset/RevoU.png">
+                <div>
+                    <h2>Mengenal Kurma Palestina yang Disebut Terbesar di Dunia dan Dijual di Indonesia</h2>
+                    <h4>Henry</h4>
+                    <h4>09 November 2023</h4>
+                    <div>
+                        <p>
+                            Liputan6.com, Jakarta - Produk Palestina ternyata cukup banyak beredar di Indonesia. Ada beberapa produk Palestina yang diimpor 
+                            serta dijual bebas di Indonesia, antara lain adalah kurma segar atau kurma yang dikeringkan, minyak zaitun, baut, mur dan sekrup.
+                            Salah satu yang dikenal luas adalah kurma Palestina atau sering disebut kurma Medjool.........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
     
     <!-- Footer -->
     <footer id="myFooter">
