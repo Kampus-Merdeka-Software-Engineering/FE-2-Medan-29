@@ -217,6 +217,10 @@ body {
   font-size: 50px;
 }
 
+.home-caption a {
+  margin: 0;
+}
+
 .home-image {
   flex: 1;
   margin-right: 30px;
@@ -334,24 +338,25 @@ button {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 20px;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
 .berita-card {
   display: flex;
-  padding: 15px;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  padding: 10px;
+  margin-inline: 15px; /* Reduced margin for smaller screens */
   border: 1px solid #ccc;
   border-radius: 8px;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 
 .berita-card img {
-  max-width: 40%;
+  max-width: 100%;
   height: auto;
   border-radius: 3px;
-  margin-right: 20px; /* Adjust the margin between the image and caption */
 }
 
 .berita-caption {
@@ -360,10 +365,27 @@ button {
   justify-content: center;
 }
 
+.berita-caption a{
+  margin: 0;
+}
+
 .berita-caption > div {
   margin: 0; /* Reset margin for the inner div */
 }
 
+@media screen and (min-width: 768px) {
+  .berita-card {
+    flex-direction: row; /* Switch back to row layout for larger screens */
+  }
+
+  .berita-card img {
+    max-width: 40%;
+  }
+
+  .berita-caption {
+    margin-left: 5px; /* Add back left margin for larger screens */
+  }
+}
 
 .tren-card {
   display: flex;
@@ -372,7 +394,7 @@ button {
   overflow: hidden;
   max-width: 400px;
   margin-bottom: 20px; /* Memberikan jarak antar elemen tren-card */
-  transition: transform 0.5s;
+  transition: transform 0.3s;
 }
 
 .tren-card:hover  {
@@ -383,6 +405,12 @@ button {
   width: 40%;
   object-fit: cover;
   border-right: 1px solid #ccc; /* Garis pisah di antara gambar dan konten */
+}
+
+@media screen and (max-width: 600px) {
+  .tren-card img {
+    display: none;
+  }
 }
 
 .tren-caption {
@@ -508,6 +536,18 @@ button {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Mukta", sans-serif;
+}
+
+.form-card button{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.form-card button:hover{
+  background-color: #472a24;
+  color: white;
 }
 
 /* Responsive */
