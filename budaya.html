@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <link rel="stylesheet" href="./css/topic.css" />
+    <title>Budaya</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- nav atas -->
+    <section class="nav">
+        <nav class="nav-upper">
             <div class="logo">
                 <img src="./asset/logo1.png" width="100%" alt="" />
             </div>
@@ -20,102 +21,120 @@
                 <li><a href="./about_us.html">Tentang Kami</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <nav class="main-navigation">
-        <ul class="temaberita">
-            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-            <li class="menu-item"><a href="./travel.html">Travel</a></li>
-        </ul>
-    </nav>
-    
+    <!-- nav bawah -->
+    <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
+        </div>
+    </section>
 
     <main>
         <div class="topic-title">Budaya</div>
         <section class="news">
-            <div class="article" onclick="redirectToLink('https://www.kompas.com/edu/read/2023/11/07/143821171/budaya-patriarki-bikin-peran-pengasuhan-anak-makin-sulit')">
-                <img src="./asset/topic/croissant.jpeg">
-                <div>
-                    <h2>Budaya Patriarki Bikin Peran Pengasuhan Anak Makin Sulit</h2>
-                    <h4>Inang Jalaludin Shofihara</h4>
-                    <div>
-                        <p>
-                            KOMPAS.com - Budaya patriarki yang mengharuskan ayah sebagai tulang punggung keluarga dan ibu
-                            sepenuhnya mengurus rumah tangga berlaku umum di keluarga Indonesia.  Kemampuan biologis untuk 
-                            hamil dan melahirkan membuat peran pengasuhan melekat pada perempuan, sedangkan peran mencari nafkah 
-                            menjadi tugas laki-laki sebagai ayah.  Pembagian peran ibu dan ayah yang didasari kondisi biologis sering 
-                            memunculkan permasalahan di dalam praktik pernikahan karena ibu turut bekerja.  Peneliti Southeast Asian 
-                            Ministers of Education Organization Center of Early Childhood Care Education and Parenting (SEAMEO CECCEP) 
-                            Assila Prianggi HB mengatakan, parameter keberhasilan seorang ayah diukur dari gaji.  Sementara itu, 
-                            keberhasilan seorang ibu dinilai dari perannya mengatur dan mengelola rumah termasuk pengasuhan anak........
-                        </p>
-                        <a href='https://www.kompas.com/edu/read/2023/11/07/143821171/budaya-patriarki-bikin-peran-pengasuhan-anak-makin-sulit'> Baca Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="article">
-                <img src="./asset/image/berita-img.jpeg">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
                     <h2>Lestarikan Kebudayaan, Hajatan Tradisi Budaya Digelar di Kepulauan Seribu</h2>
-                    <h4>Wahyu Setyo Widodo</h4>
+                    <h4>Wahyu Setyo Widodo </h4>
+                    <h4>Selasa, 31 Okt 2023</h4>
                     <div>
                         <p>
-                            Kepulauan Seribu - Untuk melestarikan budaya setempat, acara Hajatan Tradisi Kebudayaan digelar di Kepulauan Seribu. 
-                            Ajang tahunan ini mengangkat tradisi lokal setempat. Tahun ini, acara Hajatan Tradisi Kebudayaan dilaksanakan 
-                            di Pulau Tidung dengan mengangkat sejarah Raja Pandita. Acara dilaksanakan selama dua hari, 
-                            dari Sabtu 28 Oktober 2023 sampai dengan Minggu 29 Oktober 2023. Acara tersebut diramaikan oleh 
-                            kurang lebih 600-an peserta dari 6 (enam) kelurahan di Kepulauan Seribu, dengan ciri khas seni budaya pulau 
-                            masing masing dan juga penampilan-penampilan hasil karya kreativitas masyarakat maupun....
+                            Kepulauan Seribu - Untuk melestarikan budaya setempat, acara Hajatan Tradisi Kebudayaan digelar di Kepulauan Seribu. Ajang tahunan ini 
+                            mengangkat tradisi lokal setempat. Tahun ini, acara Hajatan Tradisi Kebudayaan dilaksanakan di Pulau Tidung dengan 
+                            mengangkat sejarah Raja Pandita. Acara telah dilaksanakan selama dua hari, dari Sabtu 28 Oktober 2023 sampai dengan Minggu 29 Oktober 2023.
+                            Acara tersebut diramaikan oleh kurang lebih 600-an peserta dari 6 (enam) kelurahan di Kepulauan Seribu, dengan ciri khas seni budaya 
+                            pulau masing masing dan juga penampilan-penampilan hasil karya kreativitas masyarakat maupun komunitas di Kepulauan Seribu......<a href='./halaman-berita.html'> Baca Selengkapnya</a>
                         </p>
-                        <a href="./halaman-berita.html"> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Warna-warni Kain Tradisional "Pasar Wastra" untuk Anak Muda</h2>
+                    <h4>Ryan Sara Pratiwi dan Glori K. Wadrianto Tim Redaksi</h4>
+                    <h4>9 Oktober 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            KOMPAS.com - Berangkat dari sebuah komunitas berkain Remaja Nusantara (Swaragembira), Pasar Wastra hadir dengan fokus untuk 
+                            merevolusi seni budaya di Indonesia melalui kain-kain tradisional. Sudah berjalan sekitar dua tahun, merek lokal 
+                            ini tidak hanya sekadar menjual berbagai macam wastra Indonesia. Mereka juga memperkenalkan wastra dan cara penggunaannya 
+                            kepada anak-anak muda, serta membantu mendorong perekonomian para perajin kain tradisional di daerah agar menjadi lebih baik.
+                            "Awalnya, Pasar Wastra ini bisa dibilang hanya sebagai tempat penitipan kain-kain tradisional dari para perajin di daerah.....<a href="./halaman-berita.html">Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Upaya Pelestarian Kebaya Indonesia Lewat Gaya Berpakaian Anak Muda</h2>
+                    <h4>Ryan Sara Pratiwi dan Wisnubrata Tim Redaks</h4>
+                    <h4>14 Agustus 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            KOMPAS.com - Bukan hanya sekadar busana, kebaya sebagai identitas budaya Indonesia wajib dilestarikan dari generasi ke generasi 
+                            agar tidak punah atau hilang. Hal itu pula yang mendorong pemerintah menetapkan tanggal 24 Juli sebagai peringatan Hari Kebaya 
+                            Nasional yang tertuang dalam Keputusan Presiden RI (Keppres) Nomor 19 tahun 2023. Menindaklanjuti keputusan ini, Tim Nasional 
+                            Kebaya Indonesia berupaya untuk terus mengadakan berbagai kegiatan yang berhubungan dengan kebaya seperti parade busana kebaya, 
+                            pelatihan, hingga edukasi kepada generasi muda. Menurut Ketua Tim Nasional Kebaya Indonesia, Lana T. Koentjoro, saat ini edukasi......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>St. Mary College Australia Selami Kekayaan Budaya Indonesia Bersama KJRI Sydney </h2>
+                    <h4>Irawan Sapto Adhi</h4>
+                    <h4>14 September 2023
+                    </h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            SYDNEY, KOMPAS.com - Kehadiran Konjen RI Sydney Vedi Kurnia Buana beserta rombongan dari KJRI Sydney disambut para 
+                            siswi dengan setelan kebaya modern bawahan batik, Selasa (12/9/2023). Sambutan meriah dan hangat dari St Mary Star of the 
+                            Sea College tersebut terjadi ketika KJRI Sydney melaksanakan kegiatan Indonesia Goes to School (IGtS), sekaligus juga 
+                            “Indonesian day”. IGtS kali ini dilaksanakan oleh KJRI Sydney dengan dukungan dari berbagai pihak, seperti Australia Indonesia Association 
+                            (AIA) NSW, Balai Bahasa dan Budaya Indonesia (BBBI) NSW, Sanggar Tari Bali Saraswati, Perhimpunan Pelajar Indonesia Australia (PPIA) New South Wales.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
+                <div>
+                    <h2>Wastra dan Budaya Nusantara Bakal Tampil di New York Fashion Week</h2>
+                    <h4>Ryan Sara Pratiwi dan Lusia Kus Anna Tim Redaksi</h4>
+                    <h4>29 Agustus 2023</h4>
+                    <div>
+                        <p>
+                            KOMPAS.com - Ajang mode bergengsi New York Fashion Week (NYFW) kembali menampilkan karya desainer dan jenama fesyen Indonesia. 
+                            Melalui komunitas desainer bernama Indonesia Now, sejumlah desainer dan jenama fesyen Indonesia akan mempresentasikan rancangannya 
+                            di New York Fashion Week (NYFW) The Shows Spring Summer 2023/2024, di Spring Studios, New York, Amerika Serikat, pada tanggal 
+                            13 September 2023. Pada gelaran NYFW musim ini, Indonesia Now menghadirkan koleksi busana siap pakai yang terinspirasi dari kekayaan wastra.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
     
     <!-- Footer -->
     <footer id="myFooter">
@@ -131,6 +150,10 @@
         }
         function redirectToLink(link) {
             window.location.href = link;
+        }
+        function toggleMenu() {
+            const navigation = document.querySelector('.main-navigation');
+            navigation.classList.toggle('mobile-menu-open');
         }
     </script>
 </body>

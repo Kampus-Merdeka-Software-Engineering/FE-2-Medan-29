@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
-    <link rel="stylesheet" href="./css/topic.css" />
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;700&display=swap">
     
 </head>
 
 <body>
-    <header>
-        <nav>
+    <!-- nav atas -->
+    <section class="nav">
+        <nav class="nav-upper">
             <div class="logo">
                 <img src="./asset/logo1.png" width="100%" alt="" />
             </div>
@@ -20,93 +21,116 @@
                 <li><a href="./about_us.html">Tentang Kami</a></li>
             </ul>
         </nav>
-    </header>
+    </section>
 
-    <nav class="main-navigation">
-        <ul class="temaberita">
-            <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
-            <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
-            <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
-            <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
-            <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
-            <li class="menu-item"><a href="./travel.html">Travel</a></li>
-        </ul>
-    </nav>
+    <!-- nav bawah -->
+    <section class="main-nav">
+        <div class="main-navigation">
+          <span class="menu-toggle" onclick="toggleMenu()"></span>
+          <nav>
+            <ul class="temaberita">
+                <li class="menu-item"><a href="./budaya.html">Budaya</a></li>
+                <li class="menu-item"><a href="./fashion.html">Fashion</a></li>
+                <li class="menu-item"><a href="./gayahidupsehat.html">Gaya Hidup Sehat</a></li>
+                <li class="menu-item"><a href="./kecantikan.html">Kecantikan</a></li>
+                <li class="menu-item"><a href="./kuliner.html">Kuliner</a></li>
+                <li class="menu-item"><a href="./travel.html">Travel</a></li>
+            </ul>
+          </nav>
+        </div>
+    </section>
     
 
     <main>
-        <div class="topic-title">Budaya</div>
+        <div class="topic-title">Fashion</div>
         <section class="news">
-            <div class="article" onclick="redirectToLink('https://lifestyle.kompas.com/read/2023/11/08/054910220/keindahan-laut-jadi-inpirasi-koleksi-busana-resor-ala-vanilla-hijab')">
-                <img src="./asset/topic/hijab.jpg">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>Keindahan Laut Jadi Inpirasi Koleksi Busana Resor ala Vanilla Hijab</h2>
-                    <h4>Dinno Baskoro</h4>
+                    <h2>10 Rekomendasi Kemeja Kotak-Kotak Perempuan Terbaik, Nyaman Dipakai</h2>
+                    <h4>Nafi' Khoiriyah</h4>
+                    <h4>19 November 2023</h4>
                     <div>
                         <p>
-                            KOMPAS.com - Brand lokal modest fashion, Vanilla Hijab merilis koleksi busana terbarunya yang 
-                            bertajuk "Magical Day". Koleksi busana modest yang disuguhkan itu terinspirasi dari kekayaan dan 
-                            keindahan laut serta pantai yang dimiliki Indonesia. Sentuhan keindahan bawah lautnya hadir dalam 
-                            motif terumbu karang yang dikombinasikan motif floral untuk menjadi kesatuan desain yang cantik. 
-                            "Negara Indonesia ini kan kepulauan, banyak pulau-pulau indah, peta-petanya, kita angkatlah itu 
-                            dalam koleksi ini," Demikian kata Mega Novelia, public relation Vanilla Hijab saat ditemui Kompas.com dalam 
-                            konferensi persnya di Walking Drum Ancol, Jakarta, baru-baru ini. Ada sekitar 12 look yang ditampilkan pada
-                             trunk show-nya yang juga digelar di pantai, Jakarta. Sebagian besar koleksi busana modestnya dituangkan.......
+                            Kemeja kotak-kotak perempuan atau kemeja flanel jadi outfit serbaguna untuk dipakai di berbagai kesempatan. Bukan hanya sebagai 
+                            atasan saja, kamu juga bisa memakainya sebagai outer pula. Namun, memilih kemeja flanel tentu jangan sembarangan. Sebab, bahan 
+                            yang kualitasnya kurang akan membuat flanel mudah rusak dan tidak nyaman dikenakan. Berikut ini adalah beberapa produk kemeja.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
                         </p>
-                        <a href='https://lifestyle.kompas.com/read/2023/11/08/054910220/keindahan-laut-jadi-inpirasi-koleksi-busana-resor-ala-vanilla-hijab'> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Inspirasi Gaya Musim Panas Seru dan Nyaman untuk Aktivitas Sehari-Hari</h2>
+                    <h4>Nabila Mecadinisa</h4>
+                    <h4>24 Juni 2022</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Spring Summer 2022 kali ini harus dirayakan dengan semarak di mana aktivitas perlahan kembali normal dari keterpurukan pandemi 
+                            yang terjadi. Kali ini, Marks & Spencer hadirkan koleksi yang fokus pada gaya sehari-hari dan sangat menunjang dan mengerti apa 
+                            kebutuhan setiap orang untuk tampil gaya dan nyaman. Pendekatan gaya modern hadir dengan siluet dress bergaya feminin disertai 
+                            motif-motif seru yang mudah dipadukan dan juga gaya. Selain itu, koleksi ini juga mengusung konsep sustainability sehingga secara.......<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Tips Padu Padan Batik agar Tampil Modis dan Elegan</h2>
+                    <h4>Mia Chitra Dinisari</h4>
+                    <h4>2 Oktober 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Batik merupakan wastra kebanggaan Indonesia. Terlebih batik telah ditetapkan sebagai Warisan Kemanusiaan untuk Budaya Lisan dan 
+                            Nonbendawi oleh UNESCO pada 2 Oktober 2009. Momen ini pun setiap tahunnya dirayakan masyarakat Indonesia sebagai Hari Batik Nasional 
+                            untuk terus menumbuhkan kebanggan dan kecintaan terhadap budaya Indonesia, yaitu batik. “Untuk bisa tetap tampil modis di Hari Batik 
+                            Nasional, Tokopedia membagikan lima tips memilih jenis baju batik wanita yang sesuai dengan berbagai jenis kegiatan serta memberikan 
+                            rekomendasi brand  lokal yang bisa jadi pilihan masyarakat di hari yang spesial ini,” kata Head of Category Development Tokopedia.........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>5 Rekomendasi Kemeja Oversize Perempuan yang Nyaman dan Stylish</h2>
+                    <h4>Nafi' Khoiriyah</h4>
+                    <h4>20 November 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Kemeja oversize perempuan jadi pakaian yang bisa dipakai kapan saja. Modelnya yang simpel cocok dipadukan dengan bawahan celana 
+                            sampai rok. Kamu tinggal mix and match dengan pakaian yang ada di lemarimu.Dibandingkan dengan potongan yang fit size, gaya yang 
+                            oversize juga akan kelihatan lebih elegan. Maka dari itu, setidaknya kamu perlu memiliki satu kemeja oversize untuk outfit kasual........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div class="article">
-                <img src="./asset/RevoU.png">
+            <div class="article" onclick="redirectToLink('halaman-berita.html')">
+                <img src="">
                 <div>
-                    <h2>News Tittle</h2>
-                    <h4>Author</h4>
+                    <h2>Mengulas 10 Tren Fashion Terkini untuk Musim Gugur 2023</h2>
+                    <h4>Christina</h4>
+                    <h4>2 Oktober 2023</h4>
                     <div>
-                        <a href="#"> Baca Selengkapnya</a>
+                        <p>
+                            Musim gugur 2023 telah tiba, dan seperti biasa, dunia fashion sedang berputar untuk menghadirkan tren-tren terkini yang akan 
+                            menginspirasi penampilan Anda selama musim ini. Musim gugur adalah waktu yang menarik dalam industri fashion karena desainer-desainer 
+                            ternama dan merek-merek berupaya memadukan gaya dan kenyamanan untuk menghadapi cuaca yang semakin sejuk. Dalam artikel ini, 
+                            kita akan mengulas 10 tren fashion terkini yang patut Anda perhatikan untuk tampil trendi dan bergaya di musim gugur 2023..........<a href="./halaman-berita.html"> Baca Selengkapnya</a>
+                        </p>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-    <button class="back-button" onclick="goBack()">Kembali
-        <a href="./home.html"></a>
-    </button>
     
     <!-- Footer -->
     <footer id="myFooter">
@@ -122,6 +146,10 @@
         }
         function redirectToLink(link) {
             window.location.href = link;
+        }
+        function toggleMenu() {
+            const navigation = document.querySelector('.main-navigation');
+            navigation.classList.toggle('mobile-menu-open');
         }
     </script>
 </body>
