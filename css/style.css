@@ -64,7 +64,7 @@ body {
 }
 
 .menu-toggle {
-  display: none; /* Initially hide the menu toggle on larger screens */
+  display: none;
 }
 
 .main-navigation ul {
@@ -168,19 +168,6 @@ body {
 .search-button:hover {
   background-color: #472a24;
   color: white;
-}
-
-/* Responsive */
-@media screen and (min-width: 768px) {
-  .search {
-    flex-direction: row; /* Switch back to row layout for larger screens */
-    justify-content: center;
-  }
-
-  .search-bar {
-    margin-bottom: 0; /* Remove the bottom margin for larger screens */
-    margin-right: 10px; /* Add margin to the right of the input for better spacing */
-  }
 }
 
 .line {
@@ -310,7 +297,6 @@ button {
 }
 
 /* berita  */
-
 .container-berita-mix {
   padding: 30px;
   margin-top: 5px;
@@ -711,6 +697,73 @@ color: #D6816E;
   color: white;
   font-size: 15px;
   margin: 0;
+}
+
+/* Responsive topic */
+@media only screen and (max-width: 768px) {
+  .article {
+    width: 100%;
+    flex-direction: row; 
+  }
+  
+  .article img {
+    width: 50%;
+    margin-right: 0;
+    max-width: 40%;
+  }
+
+  .article p {
+    margin-left: 5px;
+  }
+  
+  .topic-title {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 425px) {
+  .nav-upper {
+    display: none;
+  }
+  
+  .nav-link {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .temaberita {
+    display: none;
+  }
+
+  .main-navigation.mobile-menu-open .temaberita {
+    display: block;
+    text-align: center;
+  }
+
+  .article {
+    width: 100%;
+    flex-direction: column; 
+    padding: 10px;
+  }
+  
+  .article img {
+    width: 100%;
+    margin-right: 0;
+    
+  }
+
+  .article p {
+    margin-left: 5px;
+  }
 }
 
 
