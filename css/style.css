@@ -274,6 +274,7 @@ button {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .berita-terkini-box img {
@@ -287,6 +288,10 @@ button {
 }
 
 .berita-terkini-caption h5{
+  color: #d6816e;
+}
+
+.berita-terkini-caption h1:hover{
   color: #d6816e;
 }
 
@@ -345,6 +350,7 @@ button {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .berita-card {
@@ -403,6 +409,7 @@ button {
   max-width: 400px;
   margin-bottom: 5px; /* Memberikan jarak antar elemen tren-card */
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .tren-card:hover  {
@@ -492,6 +499,7 @@ button {
   max-width: 370px; /* Atur lebar maksimum sesuai kebutuhan */
   margin-bottom: 20px; /* Jarak antar elemen rekomen-card */
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .rekomen-card:hover  {
@@ -921,12 +929,33 @@ figcaption {
   cursor: pointer;
 }
 
+.recommend-content h1:hover {
+  color: #d6816e;
+}
+
 .img-content {
   width: 100%;
 }
 
 .title-content {
   align-self: flex-start;
+}
+
+/* Respomsive */
+@media screen and (max-width: 768px) {
+  .recommend-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .title-content {
+    text-align: center;
+  }
 }
 
 footer{
