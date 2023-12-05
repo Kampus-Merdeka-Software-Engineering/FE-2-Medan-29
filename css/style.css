@@ -286,6 +286,10 @@ button {
   margin-left: 0px;
 }
 
+.berita-terkini-caption h5{
+  color: #d6816e;
+}
+
 .berita-terkini-box:hover  {
   transform: scale(1.03);
 }
@@ -365,6 +369,10 @@ button {
   justify-content: center;
 }
 
+.berita-caption h3:hover {
+  color: #d6816e;
+}
+
 .berita-caption a{
   margin: 0;
 }
@@ -405,6 +413,14 @@ button {
   width: 40%;
   object-fit: cover;
   border-right: 1px solid #ccc; /* Garis pisah di antara gambar dan konten */
+}
+
+.tren-card h5 {
+  color: #d6816e;
+}
+
+.tren-card h5:hover{
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -484,6 +500,7 @@ button {
 
 .rekomen-card img {
   width: 100%; /* Ubah lebar gambar sesuai preferensi Anda */
+  height: 212px;
   object-fit: cover;
 }
 
@@ -495,6 +512,10 @@ button {
   margin: 5px 0;
   font-size: 16px; /* Ukuran teks Topik */
   color: #555; /* Warna teks Topik */
+}
+
+.rekomen-card h3:hover {
+  color: #d6816e;
 }
 
 .rekomen-card h3 {

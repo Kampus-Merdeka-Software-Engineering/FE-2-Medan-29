@@ -1,3 +1,9 @@
+// mobile navbar menu
+function toggleMenu() {
+    const navigation = document.querySelector('.main-navigation');
+    navigation.classList.toggle('mobile-menu-open');
+  }
+
 //page berita agar bisa diklik tiap div
 document.addEventListener('DOMContentLoaded', function () {
     var articles = document.querySelectorAll('.article');
