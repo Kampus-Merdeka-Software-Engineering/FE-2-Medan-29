@@ -703,13 +703,13 @@ color: #D6816E;
 @media only screen and (max-width: 768px) {
   .article {
     width: 100%;
-    flex-direction: row; 
+    flex-direction: column; 
+    align-items: center;
   }
   
   .article img {
-    width: 50%;
-    margin-right: 0;
-    max-width: 40%;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .article p {
@@ -718,6 +718,7 @@ color: #D6816E;
   
   .topic-title {
     margin-top: 30px;
+    text-align: center;
   }
 }
 
