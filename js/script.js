@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const BASE_URL = "https://be-2-medan-29-production.up.railway.app/";
 
 // SUBMIT EMAIL MASIH REVISI
-function submitComment(event) {
+function submitEmail(event) {
     const email = document.querySelector("#email");
 
     if (email.value.trim() === '') {
@@ -29,7 +29,6 @@ function submitComment(event) {
         return; // Menghentikan pengiriman jika kolom email kosongcd
     }
 
-//store-email disesuain sama nama database
 
     fetch(`${BASE_URL}/store-email`, {
         method: "POST",
