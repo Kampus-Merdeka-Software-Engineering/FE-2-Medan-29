@@ -78,7 +78,6 @@ function renderDataToContent(articles){
       </div>`
        
     }
-    
 }
 
 function getCategoryName(id){
