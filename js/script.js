@@ -65,7 +65,7 @@ function renderDataToContent(articles){
         parentElement.innerHTML+=`<div class="berita-card">
         <img src=${article.foto}>
         <div class="berita-caption">
-          <h5 style="color: #d6816e;">Fashion</h5>
+          <h5 style="color: #d6816e;">${getCategoryName(article.kategori_id)}</h5>
           <h3>${article.judul}</h3>
           <h5 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h5>
           <div>
@@ -79,4 +79,28 @@ function renderDataToContent(articles){
        
     }
     
+}
+
+function getCategoryName(id){
+    switch (id) {
+        case 1:
+            return "Budaya";
+            break;
+        case 2:
+            return "Fashion";
+            break;
+        case 3:
+            return "Gaya Hidup Sehat";
+            break;
+        case 4:
+            return "Kecantikan";
+            break;
+        case 5:
+            return "Kuliner";
+            break;
+        case 6:
+            return "Travel";
+            break;
+
+    }
 }
