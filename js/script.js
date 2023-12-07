@@ -48,3 +48,35 @@ function submitEmail(event) {
         console.error(error);
     });
 }
+
+
+// Fetch list news and render
+fetch("https://be-2-medan-29-production.up.railway.app/api/v1/posts")
+.then(res => res.json())
+.then(data => renderDataToContent(data.data));
+
+function renderDataToContent(articles){
+    // get element content
+    let parentElement = document.getElementById("berita-list");
+
+    for (article of articles){
+        console.log(article);
+        
+        parentElement.innerHTML+=`<div class="berita-card">
+        <img src=${article.foto}>
+        <div class="berita-caption">
+          <h5 style="color: #d6816e;">Fashion</h5>
+          <h3>${article.judul}</h3>
+          <h5 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h5>
+          <div>
+            <p style="font-size: small;">
+              ${article.deskripsi.substring(0,290)}
+            </p>
+            <a href='#' style="font-size: small;"> Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>`
+       
+    }
+    
+}
