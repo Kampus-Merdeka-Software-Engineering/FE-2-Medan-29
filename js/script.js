@@ -58,24 +58,43 @@ fetch("https://be-2-medan-29-production.up.railway.app/api/v1/posts")
 function renderDataToContent(articles){
     // get element content
     let parentElement = document.getElementById("berita-list");
+    let parentElement2 = document.getElementById("container-berita");
 
     for (article of articles){
         console.log(article);
         
-        parentElement.innerHTML+=`<div class="berita-card" onclick="redirectToDetail(${article.id})">
-        <img src=${article.foto}>
-        <div class="berita-caption">
-          <h5 style="color: #d6816e;">${getCategoryName(article.kategori_id)}</h5>
-          <h3>${article.judul}</h3>
-          <h5 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h5>
-          <div>
-            <p style="font-size: small;">
-              ${article.deskripsi.substring(0,290)}
-            </p>
-            <a href='#' style="font-size: small;"> Baca Selengkapnya</a>
-          </div>
-        </div>
-      </div>`
+        if (article.id == 12){
+            parentElement2.innerHTML+=`<div class="berita-terkini-box" onclick="redirectToDetail(${article.id})">
+                <img src=${article.foto}>
+                <div class="berita-terkini-caption">
+                    <h5>${getCategoryName(article.kategori_id)}</h5>
+                    <h1>${article.judul}</h1>
+                    <h4>${article.pembuat}, ${article.tanggal}</h4>
+                    <div>
+                        <p>
+                        ${article.deskripsi.substring(0,880)}...
+                        </p>
+                        <a href='#' style="margin: 0;"> Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>`
+        }
+        if (article.id % 5 === 0) {
+            parentElement.innerHTML+=`<div class="berita-card" onclick="redirectToDetail(${article.id})">
+            <img src=${article.foto}>
+            <div class="berita-caption">
+            <h5 style="color: #d6816e;">${getCategoryName(article.kategori_id)}</h5>
+            <h3>${article.judul}</h3>
+            <h5 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h5>
+            <div>
+                <p style="font-size: small;">
+                ${article.deskripsi.substring(0,290)}
+                </p>
+                <a href='#' style="font-size: small;"> Baca Selengkapnya</a>
+            </div>
+            </div>
+        </div>`
+        }
        
     }
 }

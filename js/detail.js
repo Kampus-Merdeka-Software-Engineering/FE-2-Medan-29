@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM Content Loaded");
     // Get the product ID from the URL
