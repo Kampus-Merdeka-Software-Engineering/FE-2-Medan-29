@@ -62,7 +62,7 @@ function renderDataToContent(articles){
     for (article of articles){
         console.log(article);
         
-        parentElement.innerHTML+=`<div class="berita-card">
+        parentElement.innerHTML+=`<div class="berita-card" onclick="redirectToDetail(${article.id})">
         <img src=${article.foto}>
         <div class="berita-caption">
           <h5 style="color: #d6816e;">${getCategoryName(article.kategori_id)}</h5>
@@ -78,6 +78,11 @@ function renderDataToContent(articles){
       </div>`
        
     }
+}
+
+function redirectToDetail(newsId) {
+    // You can use window.location.href to redirect to the detail page
+    window.location.href = './halaman-berita.html?id=' + newsId;
 }
 
 function getCategoryName(id){
