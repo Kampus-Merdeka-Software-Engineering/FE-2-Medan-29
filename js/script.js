@@ -154,3 +154,32 @@ function getCategoryName(id){
 
     }
 }
+
+function postSubmitEmail(event) {
+    event.preventDefault();
+    console.log("test");
+    
+    const form = event.target;
+    const email = form.querySelector('[name="email"]').value;
+    
+    const data = {
+        email: email,
+    };
+    
+    fetch('https://be-2-medan-29-production.up.railway.app/api/v1/emails', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+        form.reset();
+        alert(data.message);
+    });
+}
+
+document.querySelector("#newsletter form")
+    .addEventListener("submit", postSubmitEmail);
