@@ -58,11 +58,14 @@ fetch("https://be-2-medan-29-production.up.railway.app/api/v1/posts")
 function renderDataToContent(articles){
     // get element content
     let parentElement = document.getElementById("berita-list");
-    let parentElement2 = document.getElementById("container-berita");
+    let parentElement2 = document.getElementById("container-berita"); 
+    let parentElement3 = document.getElementById("rekomendasi-list");
+    let parentElement4 = document.getElementById("tren-list");
 
     for (article of articles){
         console.log(article);
         
+        // berita terkini
         if (article.id == 12){
             parentElement2.innerHTML+=`<div class="berita-terkini-box" onclick="redirectToDetail(${article.id})">
                 <img src=${article.foto}>
@@ -74,12 +77,14 @@ function renderDataToContent(articles){
                         <p>
                         ${article.deskripsi.substring(0,880)}...
                         </p>
-                        <a href='#' style="margin: 0;"> Baca Selengkapnya</a>
+                        <a style="margin: 0;"> Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>`
         }
-        if (article.id % 5 === 0) {
+
+        // list berita
+        if (article.id % 7 === 0) {
             parentElement.innerHTML+=`<div class="berita-card" onclick="redirectToDetail(${article.id})">
             <img src=${article.foto}>
             <div class="berita-caption">
@@ -90,10 +95,32 @@ function renderDataToContent(articles){
                 <p style="font-size: small;">
                 ${article.deskripsi.substring(0,290)}
                 </p>
-                <a href='#' style="font-size: small;"> Baca Selengkapnya</a>
+                <a style="font-size: small;"> Baca Selengkapnya</a>
             </div>
             </div>
         </div>`
+        }
+
+        // list tren
+        if (article.id % 6 === 0) {
+            parentElement4.innerHTML+=`<div class="tren-card" onclick="redirectToDetail(${article.id})">
+            <div class="tren-caption">
+              <h5>${article.judul}</h5>
+              <h6 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h6>
+            </div>
+          </div>`
+        }
+
+        // list rekomendasi
+        if (article.id % 5 === 0) {
+            parentElement3.innerHTML+=`<div class="rekomen-card" onclick="redirectToDetail(${article.id})">
+            <img src=${article.foto}>
+            <div>
+              <h5>${getCategoryName(article.kategori_id)}</h5>
+              <h3>${article.judul}</h3>
+              <h5 style="font-weight: bold;">${article.pembuat}, ${article.tanggal}</h5>
+            </div>
+          </div>`
         }
        
     }

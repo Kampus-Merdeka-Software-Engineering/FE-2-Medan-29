@@ -64,7 +64,7 @@ async function renderRekomendasiBerita(kategoriId){
         data.data.slice(0, 4).forEach(article =>{
             parentElement.innerHTML+= `<div class="box" onclick="redirectToDetail(${article.id})">
             <img class="img-content" src=${article.foto} alt="Foto Rekomendasi"/>
-            <h1>${article.judul}</h1>
+            <h3>${article.judul}</h3>
           </div>`
         });
     } 
