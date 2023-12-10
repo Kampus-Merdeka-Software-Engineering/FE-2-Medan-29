@@ -226,6 +226,26 @@ body {
   transform: scale(1.03);
 }
 
+@media screen and (max-width: 768px) {
+  .home-caption {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .home-image {
+    flex: 1;
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .home-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Allow the card to take full width on smaller screens */
+  }
+
+  .home-caption h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+}
+
 button {
   margin-top: 5px;
   padding: 5px;
@@ -402,24 +422,12 @@ button {
   transform: scale(1.03);
 }
 
-.tren-card img {
-  width: 40%;
-  object-fit: cover;
-  border-right: 1px solid #ccc; /* Garis pisah di antara gambar dan konten */
-}
-
 .tren-card h5 {
   color: #d6816e;
 }
 
 .tren-card h5:hover{
   color: black;
-}
-
-@media screen and (max-width: 600px) {
-  .tren-card img {
-    display: none;
-  }
 }
 
 .tren-caption {
@@ -446,6 +454,15 @@ button {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .container-berita-mix {
+    grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+  }
+
+  .berita-list {
+    order: -1; /* Move berita-list above berita-tren in the document flow */
+  }
+}
 
 /* rekomen  */
 .container-rekomen {
@@ -472,7 +489,7 @@ button {
 .container-rekomendasi .line {
   border-top: 1px solid #e6e6e6;
   margin-top: -10px;
-  margin-left: -10px;
+  margin-left: 20px;
   width: auto;
 }
 
@@ -519,6 +536,30 @@ button {
 
 .rekomen-card h5:last-child {
   font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container-rekomen {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .container-rekomendasi .tren-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column count for smaller screens */
+  }
+
+  .container-rekomendasi h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .container-rekomendasi .line {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .rekomen-card {
+    max-width: 100%; /* Adjust maximum width for smaller screens */
+  }
 }
 
 
