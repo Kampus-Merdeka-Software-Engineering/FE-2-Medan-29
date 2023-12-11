@@ -126,51 +126,6 @@ body {
   }
 }
 
-.search-container {
-  text-align: center;
-  margin: 20px;
-}
-
-.search {
-  display: flex;
-  flex-direction: column; /* Stack items vertically on smaller screens */
-  align-items: center;
-}
-
-.search-bar {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 50px;
-  width: 100%; /* Make the input take full width */
-  max-width: 600px; /* Set a max-width for larger screens */
-  height: 40px;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Mukta", sans-serif;
-  margin-bottom: 10px; /* Add margin below the input for better spacing */
-}
-
-.search-button {
-  padding: 10px;
-  background-color: #d6816e;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  width: 60px;
-  height: 45px;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Mukta", sans-serif;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-inline: 10px;
-}
-
-.search-button:hover {
-  background-color: #472a24;
-  color: white;
-}
-
 .line {
   width: auto;
   height: 5px;
@@ -314,6 +269,14 @@ button {
 
   .berita-terkini-caption {
     margin-left: 18px; /* Add back left margin for larger screens */
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .berita-terkini-caption {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
