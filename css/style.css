@@ -95,7 +95,7 @@ body {
 }
 
 /* Responsive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 851px) {
   .main-navigation ul {
     display: none; /* Hide the menu items on smaller screens */
     flex-direction: column; /* Stack items vertically */
@@ -112,6 +112,7 @@ body {
   .menu-toggle {
     display: flex; /* Show the menu toggle on smaller screens */
     cursor: pointer;
+    right: 20px;
   }
 
   .menu-toggle:before {
@@ -313,6 +314,14 @@ button {
 
   .berita-terkini-caption {
     margin-left: 18px; /* Add back left margin for larger screens */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .berita-terkini-caption {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 
