@@ -166,7 +166,7 @@ function postSubmitEmail(event) {
         email: email,
     };
     
-    fetch('https://be-2-medan-29-production.up.railway.app/api/v1/emails', {
+    fetch('https://be-2-medan-29-production.up.railway.app/api/v1/emails/subscribe', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
