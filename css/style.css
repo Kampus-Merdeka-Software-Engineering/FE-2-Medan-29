@@ -64,7 +64,7 @@ body {
 }
 
 .menu-toggle {
-  display: none; /* Initially hide the menu toggle on larger screens */
+  display: none;
 }
 
 .main-navigation ul {
@@ -170,19 +170,6 @@ body {
   color: white;
 }
 
-/* Responsive */
-@media screen and (min-width: 768px) {
-  .search {
-    flex-direction: row; /* Switch back to row layout for larger screens */
-    justify-content: center;
-  }
-
-  .search-bar {
-    margin-bottom: 0; /* Remove the bottom margin for larger screens */
-    margin-right: 10px; /* Add margin to the right of the input for better spacing */
-  }
-}
-
 .line {
   width: auto;
   height: 5px;
@@ -239,6 +226,26 @@ body {
   transform: scale(1.03);
 }
 
+@media screen and (max-width: 768px) {
+  .home-caption {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  .home-image {
+    flex: 1;
+    margin-right: 0; /* Remove right margin on smaller screens */
+  }
+
+  .home-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Allow the card to take full width on smaller screens */
+  }
+
+  .home-caption h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+}
+
 button {
   margin-top: 5px;
   padding: 5px;
@@ -274,6 +281,7 @@ button {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
+  cursor: pointer;
 }
 
 .berita-terkini-box img {
@@ -284,6 +292,14 @@ button {
 
 .berita-terkini-caption{
   margin-left: 0px;
+}
+
+.berita-terkini-caption h5{
+  color: #d6816e;
+}
+
+.berita-terkini-caption h1:hover{
+  color: #d6816e;
 }
 
 .berita-terkini-box:hover  {
@@ -301,7 +317,6 @@ button {
 }
 
 /* berita  */
-
 .container-berita-mix {
   padding: 30px;
   margin-top: 5px;
@@ -341,6 +356,7 @@ button {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .berita-card {
@@ -363,6 +379,10 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.berita-caption h3:hover {
+  color: #d6816e;
 }
 
 .berita-caption a{
@@ -395,22 +415,19 @@ button {
   max-width: 400px;
   margin-bottom: 5px; /* Memberikan jarak antar elemen tren-card */
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .tren-card:hover  {
   transform: scale(1.03);
 }
 
-.tren-card img {
-  width: 40%;
-  object-fit: cover;
-  border-right: 1px solid #ccc; /* Garis pisah di antara gambar dan konten */
+.tren-card h5 {
+  color: #d6816e;
 }
 
-@media screen and (max-width: 600px) {
-  .tren-card img {
-    display: none;
-  }
+.tren-card h5:hover{
+  color: black;
 }
 
 .tren-caption {
@@ -437,6 +454,15 @@ button {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .container-berita-mix {
+    grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+  }
+
+  .berita-list {
+    order: -1; /* Move berita-list above berita-tren in the document flow */
+  }
+}
 
 /* rekomen  */
 .container-rekomen {
@@ -463,7 +489,7 @@ button {
 .container-rekomendasi .line {
   border-top: 1px solid #e6e6e6;
   margin-top: -10px;
-  margin-left: -10px;
+  margin-left: 20px;
   width: auto;
 }
 
@@ -476,6 +502,7 @@ button {
   max-width: 370px; /* Atur lebar maksimum sesuai kebutuhan */
   margin-bottom: 20px; /* Jarak antar elemen rekomen-card */
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .rekomen-card:hover  {
@@ -484,6 +511,7 @@ button {
 
 .rekomen-card img {
   width: 100%; /* Ubah lebar gambar sesuai preferensi Anda */
+  height: 212px;
   object-fit: cover;
 }
 
@@ -497,6 +525,10 @@ button {
   color: #555; /* Warna teks Topik */
 }
 
+.rekomen-card h3:hover {
+  color: #d6816e;
+}
+
 .rekomen-card h3 {
   margin: 5px 0;
   font-size: 18px; /* Ukuran teks judul */
@@ -504,6 +536,30 @@ button {
 
 .rekomen-card h5:last-child {
   font-weight: bold;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container-rekomen {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .container-rekomendasi .tren-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column count for smaller screens */
+  }
+
+  .container-rekomendasi h2 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .container-rekomendasi .line {
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .rekomen-card {
+    max-width: 100%; /* Adjust maximum width for smaller screens */
+  }
 }
 
 
@@ -618,7 +674,10 @@ a:hover {
   border-radius: 5px;
   text-align: left;
   cursor: pointer; 
-  
+}
+
+.article a{
+  margin: 0;
 }
 
 .article img {
@@ -630,17 +689,19 @@ a:hover {
 .article div {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 .article h2 {
-  margin: 5px 0;
+  margin: 0 0 0 5px;
   color: #472A24;
+  line-height: 1;
 }
 
 .article h4 {
-  margin: 10px 0 5px;
+  margin: 0;
   color: #472A24;
+  line-height: 1;
 }
 
 .article div.read-more {
@@ -682,6 +743,74 @@ color: #D6816E;
   color: white;
   font-size: 15px;
   margin: 0;
+}
+
+/* Responsive topic */
+@media only screen and (max-width: 768px) {
+  .article {
+    width: 100%;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .article img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .article p {
+    margin-left: 5px;
+  }
+  
+  .topic-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 425px) {
+  .nav-upper {
+    display: none;
+  }
+  
+  .nav-link {
+    display: none;
+  }
+
+  .main-navigation {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .temaberita {
+    display: none;
+  }
+
+  .main-navigation.mobile-menu-open .temaberita {
+    display: block;
+    text-align: center;
+  }
+
+  .article {
+    width: 100%;
+    flex-direction: column; 
+    padding: 10px;
+  }
+  
+  .article img {
+    width: 100%;
+    margin-right: 0;
+    
+  }
+
+  .article p {
+    margin-left: 5px;
+  }
 }
 
 
@@ -900,12 +1029,33 @@ figcaption {
   cursor: pointer;
 }
 
+.recommend-content h1:hover {
+  color: #d6816e;
+}
+
 .img-content {
   width: 100%;
 }
 
 .title-content {
   align-self: flex-start;
+}
+
+/* Respomsive */
+@media screen and (max-width: 768px) {
+  .recommend-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .title-content {
+    text-align: center;
+  }
 }
 
 footer{
