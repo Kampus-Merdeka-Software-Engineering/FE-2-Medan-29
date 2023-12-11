@@ -96,32 +96,45 @@ body {
 
 /* Responsive */
 @media screen and (max-width: 851px) {
+  .main-navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .main-navigation ul {
-    display: none; /* Hide the menu items on smaller screens */
-    flex-direction: column; /* Stack items vertically */
+    display: none;
+    flex-direction: column;
     position: absolute;
-    margin-top: 60px; /* Adjust the distance from the top */
+    margin-top: 60px; 
     left: 0;
     right: 0;
-    background-color: #fff; /* Add a background color for better visibility */
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 999;
     justify-content: center;
+    width: 100%;
+  }
+
+  .main-navigation ul li {
+    border: none; 
+    margin-bottom: 10px; 
   }
 
   .menu-toggle {
-    display: flex; /* Show the menu toggle on smaller screens */
+    display: flex; 
     cursor: pointer;
-    right: 20px;
+    align-self: flex-start; 
+    margin-top: 10px;
+    padding-left: 20px;
   }
 
   .menu-toggle:before {
-    content: '\2630'; /* Unicode character for three horizontal lines */
+    content: '\2630';
     font-size: 24px;
   }
 
   .main-navigation.mobile-menu-open ul {
-    display: flex; /* Show the menu items when the menu is open */
+    display: flex;
     padding: 10px;
   }
 }
@@ -133,7 +146,7 @@ body {
 
 .search {
   display: flex;
-  flex-direction: column; /* Stack items vertically on smaller screens */
+  flex-direction: column; 
   align-items: center;
 }
 
@@ -141,13 +154,13 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 50px;
-  width: 100%; /* Make the input take full width */
-  max-width: 600px; /* Set a max-width for larger screens */
+  width: 100%; 
+  max-width: 600px; 
   height: 40px;
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Mukta", sans-serif;
-  margin-bottom: 10px; /* Add margin below the input for better spacing */
+  margin-bottom: 10px; 
 }
 
 .search-button {
@@ -177,8 +190,6 @@ body {
   background-color: #e6e6e6;
   border-radius: 10px;
   margin: 30px;
-  /* margin-top: 0;
-    margin-inline: 30px; */
 }
 
 .home {
@@ -229,21 +240,21 @@ body {
 
 @media screen and (max-width: 768px) {
   .home-caption {
-    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-left: 0;
   }
 
   .home-image {
     flex: 1;
-    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-right: 0;
   }
 
   .home-card {
-    padding: 10px; /* Adjust padding for smaller screens */
-    max-width: 100%; /* Allow the card to take full width on smaller screens */
+    padding: 10px; 
+    max-width: 100%;
   }
 
   .home-caption h1 {
-    font-size: 40px; /* Adjust font size for smaller screens */
+    font-size: 40px;
   }
 }
 
@@ -274,9 +285,9 @@ button {
 }
 .berita-terkini-box {
   display: flex;
-  flex-direction: column; /* Change to column layout for smaller screens */
+  flex-direction: column;
   padding: 10px;
-  margin-inline: 15px; /* Reduced margin for smaller screens */
+  margin-inline: 15px; 
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -287,8 +298,8 @@ button {
 
 .berita-terkini-box img {
   max-width: 100%;
-  height: 300px; /* Maintain aspect ratio */
-  margin-bottom: 10px; /* Add margin below image for better spacing */
+  height: 300px; 
+  margin-bottom: 10px; 
 }
 
 .berita-terkini-caption{
@@ -309,11 +320,11 @@ button {
 
 @media screen and (min-width: 768px) {
   .berita-terkini-box {
-    flex-direction: row; /* Switch back to row layout for larger screens */
+    flex-direction: row;
   }
 
   .berita-terkini-caption {
-    margin-left: 18px; /* Add back left margin for larger screens */
+    margin-left: 18px;
   }
 }
 
@@ -370,9 +381,9 @@ button {
 
 .berita-card {
   display: flex;
-  flex-direction: column; /* Change to column layout for smaller screens */
+  flex-direction: column; 
   padding: 10px;
-  margin-inline: 15px; /* Reduced margin for smaller screens */
+  margin-inline: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: transform 0.3s;
@@ -399,12 +410,12 @@ button {
 }
 
 .berita-caption > div {
-  margin: 0; /* Reset margin for the inner div */
+  margin: 0; 
 }
 
 @media screen and (min-width: 768px) {
   .berita-card {
-    flex-direction: row; /* Switch back to row layout for larger screens */
+    flex-direction: row; 
   }
 
   .berita-card img {
@@ -412,7 +423,7 @@ button {
   }
 
   .berita-caption {
-    margin-left: 5px; /* Add back left margin for larger screens */
+    margin-left: 5px;
   }
 }
 
@@ -422,7 +433,7 @@ button {
   border-radius: 8px;
   overflow: hidden;
   max-width: 400px;
-  margin-bottom: 5px; /* Memberikan jarak antar elemen tren-card */
+  margin-bottom: 5px;
   transition: transform 0.3s;
   cursor: pointer;
 }
@@ -445,13 +456,13 @@ button {
 
 .tren-caption h6 {
   margin: 0;
-  font-size: 14px; /* Sesuaikan ukuran teks Topik dan Author */
-  color: #555; /* Warna teks Topik dan Author */
+  font-size: 14px; 
+  color: #555; 
 }
 
 .tren-caption h5 {
   margin: 5px 0;
-  font-size: 18px; /* Sesuaikan ukuran teks judul */
+  font-size: 18px;
 }
 
 /* Mengatur teks judul dengan tumpukan yang lebih besar */
@@ -465,11 +476,11 @@ button {
 
 @media screen and (max-width: 768px) {
   .container-berita-mix {
-    grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .berita-list {
-    order: -1; /* Move berita-list above berita-tren in the document flow */
+    order: -1;
   }
 }
 
@@ -485,12 +496,12 @@ button {
 }
 .container-rekomendasi .tren-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr)); /* Maksimal 3 konten per baris */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
   grid-gap: 10px;
 }
 
 .container-rekomendasi h2 {
-  font-size: 24px; /* Ukuran teks judul */
+  font-size: 24px;
   margin-top: 20px;
   margin-left: -99px;
 }
@@ -508,8 +519,8 @@ button {
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
-  max-width: 370px; /* Atur lebar maksimum sesuai kebutuhan */
-  margin-bottom: 20px; /* Jarak antar elemen rekomen-card */
+  max-width: 370px;
+  margin-bottom: 20px;
   transition: transform 0.3s;
   cursor: pointer;
 }
@@ -519,7 +530,7 @@ button {
 }
 
 .rekomen-card img {
-  width: 100%; /* Ubah lebar gambar sesuai preferensi Anda */
+  width: 100%; 
   height: 212px;
   object-fit: cover;
 }
@@ -530,8 +541,8 @@ button {
 
 .rekomen-card h5 {
   margin: 5px 0;
-  font-size: 16px; /* Ukuran teks Topik */
-  color: #555; /* Warna teks Topik */
+  font-size: 16px;
+  color: #555;
 }
 
 .rekomen-card h3:hover {
@@ -540,7 +551,7 @@ button {
 
 .rekomen-card h3 {
   margin: 5px 0;
-  font-size: 18px; /* Ukuran teks judul */
+  font-size: 18px;
 }
 
 .rekomen-card h5:last-child {
@@ -550,24 +561,24 @@ button {
 /* Responsive */
 @media screen and (max-width: 768px) {
   .container-rekomen {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
 
   .container-rekomendasi .tren-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column count for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .container-rekomendasi h2 {
-    font-size: 20px; /* Adjust font size for smaller screens */
-    margin-left: 10px; /* Adjust margin for smaller screens */
+    font-size: 20px;
+    margin-left: 10px;
   }
 
   .container-rekomendasi .line {
-    margin-left: 20px; /* Adjust margin for smaller screens */
+    margin-left: 20px;
   }
 
   .rekomen-card {
-    max-width: 100%; /* Adjust maximum width for smaller screens */
+    max-width: 100%;
   }
 }
 
@@ -618,12 +629,12 @@ button {
 /* Responsive */
 @media screen and (max-width: 600px) {
   .form-card {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 90%;
   }
 
   #email {
-    width: 100%; /* Adjust the width for smaller screens */
-    max-width: none; /* Remove the max-width for smaller screens */
+    width: 100%;
+    max-width: none; 
   }
 }
 
@@ -1059,7 +1070,7 @@ figcaption {
 
   .box {
     width: 100%;
-    margin: 10px 0; /* Adjust margin for smaller screens */
+    margin: 10px 0;
   }
 
   .title-content {
