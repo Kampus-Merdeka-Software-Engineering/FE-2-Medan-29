@@ -18,36 +18,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const BASE_URL = "https://be-2-medan-29-production.up.railway.app/";
+// const BASE_URL = "https://be-2-medan-29-production.up.railway.app/";
 
-// SUBMIT EMAIL MASIH REVISI
-function submitEmail(event) {
-    const email = document.querySelector("#email");
+// // SUBMIT EMAIL MASIH REVISI
+// function submitEmail(event) {
+//     const email = document.querySelector("#email");
 
-    if (email.value.trim() === '') {
-        alert("Email must be filled in!");
-        return; // Menghentikan pengiriman jika kolom email kosongcd
-    }
+//     if (email.value.trim() === '') {
+//         alert("Email must be filled in!");
+//         return; // Menghentikan pengiriman jika kolom email kosongcd
+//     }
 
 
-    fetch(`${BASE_URL}/store-email`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-            email: email.value,
-        }),
-    })
-    .then((response) => response.json())
-    .then((response) => {
-        alert("Email successfully sent!")
-        console.log(response);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
-}
+//     fetch(`${BASE_URL}/store-email`, {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json",
+//         },
+//         body: JSON.stringify({
+//             email: email.value,
+//         }),
+//     })
+//     .then((response) => response.json())
+//     .then((response) => {
+//         alert("Email successfully sent!")
+//         console.log(response);
+//     })
+//     .catch((error) => {
+//         console.error(error);
+//     });
+// }
 
 
 // Fetch list news and render
@@ -181,5 +181,5 @@ function postSubmitEmail(event) {
     });
 }
 
-document.querySelector("#newsletter form")
-    .addEventListener("submit", postSubmitEmail);
+document.querySelector(".form-card form")
+document.addEventListener("submit", postSubmitEmail);
